@@ -11,7 +11,7 @@ class Table
   def valid_position?(position:)
     is_x_coordinate_on_table?(position&.x_coordinate) && is_y_coordinate_on_table?(position&.y_coordinate)
   end
-
+  
   def is_x_coordinate_on_table?(x)
     return false unless x.is_a?(Integer)
     x.between?(0, width - 1)
